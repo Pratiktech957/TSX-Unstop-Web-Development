@@ -41,13 +41,21 @@ A one-stop place to showcase my projects, 3D creativity, and developer personali
 🔗 **[Check it Live]([https://your-live-site-link.com](https://xg09ms2s-5500.inc1.devtunnels.ms/))** *(https://xg09ms2s-5500.inc1.devtunnels.ms/)*
 
 ---
+I’ve built two versions of my personal portfolio website — each with its own unique style and experience.
+Feel free to explore both and let me know which one you like the most! 😄
+
+🔗 Portfolio Version	Description	Live Link
+🌟 Portfolio 1	Clean, minimal, and responsive layout built with HTML, CSS, JS, and Bootstrap.	View Now
+🎮 Portfolio 2	Animated, creative, and 3D-enhanced experience powered by Three.js.	View Now
+
+💬 Which one do you prefer? Feel free to drop a ⭐ and leave your feedback in Issues or Discussions!
 
 ## 🛠️ Installation & Run Locally
 
 Clone the repository and open it in your browser:
 
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
+git clone https://github.com/Pratiktech957/portfolio-website.git
 cd portfolio-website
 
 📬 Contact Me
