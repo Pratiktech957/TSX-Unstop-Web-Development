@@ -38,7 +38,7 @@ A one-stop place to showcase my projects, 3D creativity, and developer personali
 
 ## 📸 Live Preview
 
-🔗 **[Check it Live]([https://your-live-site-link.com](https://xg09ms2s-5500.inc1.devtunnels.ms/))** *(Replace with your deployed URL)*
+🔗 **[Check it Live]([https://your-live-site-link.com](https://xg09ms2s-5500.inc1.devtunnels.ms/))** *(https://xg09ms2s-5500.inc1.devtunnels.ms/)*
 
 ---
 
