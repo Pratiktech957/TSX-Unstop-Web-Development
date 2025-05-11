@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D UI/UX Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.156.1/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+        <h3>Loading Experience...</h3>
+    </div>
+
+    <!-- 3D Background Canvas -->
+    <div class="canvas-container">
+        <canvas id="bg"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">UI/UX PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10">
+                    <div class="hero-content">
+                        <p class="mb-2">Hello, my name is</p>
+                        <h1>John Doe</h1>
+                        <p class="hero-subtitle">UI/UX Designer & Front-End Developer</p>
+                        <p class="mb-4">I design and build exceptional digital experiences that are both functional and beautiful. Specializing in creating intuitive user interfaces with immersive experiences.</p>
+                        <a href="#projects" class="btn btn-primary me-3">View My Work</a>
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="about-image">
+                        <img src="/api/placeholder/500/600" alt="John Doe" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h2>About Me</h2>
+                        <p>I'm a UI/UX designer and front-end developer with 5+ years of experience creating digital products that users love. My passion lies at the intersection of technology and human-centered design.</p>
+                        <p>My approach combines creative thinking with technical expertise to build solutions that are not only visually appealing but also functional and intuitive. I believe great design should be both beautiful and purposeful.</p>
+                        <h4 class="mt-4 mb-3">Skills & Technologies</h4>
+                        <div>
+                            <span class="skill-tag">UI Design</span>
+                            <span class="skill-tag">UX Research</span>
+                            <span class="skill-tag">Wireframing</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Three.js</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 style="color: #64ffda;">Featured Projects</h2>
+                    <p>A selection of my recent work showcasing UI/UX design and front-end development projects.</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card tilt-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/300" alt="Project 1" class="img-fluid">
+                        </div>
+                        <div class="project-content tilt-card-inner">
+                            <h3 class="project-title">E-Commerce Redesign</h3>
+                            <div class="project-tech">UI/UX Design • Front-end Development</div>
+                            <p>A complete redesign of an e-commerce platform focusing on improved user experience and conversion optimization.</p>
+                            <a href="#" class="btn btn-sm btn-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card tilt-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/300" alt="Project 2" class="img-fluid">
+                        </div>
+                        <div class="project-content tilt-card-inner">
+                            <h3 class="project-title">Finance Dashboard</h3>
+                            <div class="project-tech">UX Research • UI Design • React</div>
+                            <p>An intuitive financial dashboard that visualizes complex data in a user-friendly interface for better decision making.</p>
+                            <a href="#" class="btn btn-sm btn-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card tilt-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/300" alt="Project 3" class="img-fluid">
+                        </div>
+                        <div class="project-content tilt-card-inner">
+                            <h3 class="project-title">Travel App</h3>
+                            <div class="project-tech">Mobile UI • Interaction Design</div>
+                            <p>A travel planning app with immersive 3D experiences to help users explore destinations before booking their trips.</p>
+                            <a href="#" class="btn btn-sm btn-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card tilt-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/300" alt="Project 4" class="img-fluid">
+                        </div>
+                        <div class="project-content tilt-card-inner">
+                            <h3 class="project-title">Health & Fitness Platform</h3>
+                            <div class="project-tech">UX Design • Accessibility • Bootstrap</div>
+                            <p>A fitness tracking platform with an emphasis on accessibility and inclusivity for users of all abilities.</p>
+                            <a href="#" class="btn btn-sm btn-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card tilt-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/300" alt="Project 5" class="img-fluid">
+                        </div>
+                        <div class="project-content tilt-card-inner">
+                            <h3 class="project-title">Educational Platform</h3>
+                            <div class="project-tech">Information Architecture • UI Design</div>
+                            <p>An interactive learning platform designed to optimize engagement and improve knowledge retention for students.</p>
+                            <a href="#" class="btn btn-sm btn-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card tilt-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/300" alt="Project 6" class="img-fluid">
+                        </div>
+                        <div class="project-content tilt-card-inner">
+                            <h3 class="project-title">3D Product Configurator</h3>
+                            <div class="project-tech">Three.js • Interactive Design</div>
+                            <p>A 3D product visualization tool allowing users to customize and preview products in real-time before purchase.</p>
+                            <a href="#" class="btn btn-sm btn-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 style="color: #64ffda;">Get In Touch</h2>
+                    <p>Have a project in mind? Let's work together to create something amazing.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Subject">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons mb-4">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+            <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+
+    
+      <script src="script.js"></script>
+
+</body>
+</html>
